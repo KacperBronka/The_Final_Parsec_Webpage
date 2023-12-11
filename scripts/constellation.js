@@ -11,7 +11,7 @@ async function setup() {
   const c = createCanvas(windowWidth, windowHeight * 0.75);
   c.parent(document.querySelector(".section4 .constellation"));
 
-  installsData = await fetch("/installs.json")
+  installsData = await fetch("installs.json")
     .then((response) => response.json())
     .then((data) => {
       return data;
