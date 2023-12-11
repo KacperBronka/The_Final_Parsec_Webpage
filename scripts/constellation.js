@@ -209,7 +209,7 @@ function createDownload(x, y, vData) {
   let install = vData;
 
   const img = new Node("img", {
-    src: `/img/${os.toLowerCase()}.png`,
+    src: `img/${os.toLowerCase()}.png`,
   }).build();
 
   const version = new Node("span", {
